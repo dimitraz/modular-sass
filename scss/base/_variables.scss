@@ -1,0 +1,57 @@
+/*
+* Base Variables: fonts, colours and breaks
+*/
+@import url('https://fonts.googleapis.com/css?family=Cousine:400,700');
+
+// Fonts
+$font-stack-primary: Cousine, monospace;
+// $font-stack-secondary: #{sans-serif};
+
+$serif: "Georgia", #{serif-fallback};
+$serif-fallback: "Times New Roman", serif;
+
+$sans-serif: Helvetica, #{sans-serif-fallback};
+$sans-serif-fallback: "Helvetica Neue", arial, sans-serif;
+
+// Font sizes
+$h1: 2rem;
+
+
+// Colours
+$body-colour: #4b4b4b;
+$bg-colour: #fff;
+
+$color-primary: #888;
+$color-secondary: #727272;
+
+$select: #e4e5ec;
+
+// Links
+$link-colour: #{color-secondary};
+$link-hover: lighten($color-secondary, 10%);
+
+// Layout
+$width: 900px;
+$padding: 50px;
+$body-padding: #{padding};
+
+// Breaks
+$type-break: 800;
+$small-break: 700;
+$xsmall-break: 480;
+
+// Toast grid
+$toast-grid-namespace: "grid" !default;
+$toast-grid-column-namespace: "grid__col" !default;
+
+// $col-groups are the column groups you want
+// For example, $col-groups: (3, 4, 5) will output:
+// .grid__col--n-of-3, .grid__col--n-of-4, [...]
+$toast-col-groups: (2, 3, 4, 5, 6, 8, 12) !default;
+
+// Gutter width
+$toast-gutter-width: 20px !default;
+
+// Breakpoints
+$toast-breakpoint-medium: 700px !default;
+$toast-breakpoint-small: 480px !default;

@@ -1,0 +1,45 @@
+.img-max {
+  max-width: 100%;
+  min-width: 100%;
+  height: auto;
+}
+
+.flex-middle {
+  display: -webkit-flex;
+  display: flex;
+  -webkit-align-items: center;
+  align-items: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+}
+
+.inline {
+  * {
+    display: inline-block;
+    padding: 10px;
+  }
+}
+
+.left {
+  text-align: left
+}
+
+.right {
+  text-align: right;
+}
+
+// Aka, clearfix hack
+.group {
+  zoom: 1;
+
+  &:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+  &:before {
+    content: "";
+    display: table;
+  }
+}
