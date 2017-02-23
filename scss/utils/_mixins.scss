@@ -1,0 +1,17 @@
+/*
+@mixin cover ()
+Creates a full width background image on an element.
+
+-Parameters:
+--Required:
+$img-uri: URI of image to use as the background
+*/
+
+@mixin cover($img-uri) {
+  background: url($img-uri) center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+

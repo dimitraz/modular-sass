@@ -1,13 +1,10 @@
-@import "variables";
-
 body {
   font-family: $font-stack-primary;
   color: $body-colour;
-  background-color: $bg-colour;
-
-  -webkit-font-smoothing: antialiased;
   line-height: 1.8;
+  -webkit-font-smoothing: antialiased;
 
+  background-color: $bg-colour;
   padding: $padding;
 }
 
